@@ -5,14 +5,17 @@ This repository contains a simple document storage application with a mobile cli
 ## Backend
 
 The backend is a TypeScript Express application located in `backend/`.
+Run it locally with:
 
 ```
 cd backend
 npm install
-npx ts-node index.ts
+npm start
 ```
 
 The server listens on port **3000** and expects AWS credentials in the environment as usual along with optional variables `S3_BUCKET`, `DDB_TABLE` and `OPENSEARCH_URL`.
+
+The same code can also be deployed as an AWS Lambda function. See `backend/README.md` for build and deployment steps.
 
 ## Mobile App
 

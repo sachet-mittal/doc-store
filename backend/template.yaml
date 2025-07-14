@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Deploy Doc Store backend as Lambda
+
+Resources:
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: dist/handler.handler
+      Runtime: nodejs18.x
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+      Environment:
+        Variables:
+          S3_BUCKET: your-bucket-name
+          DDB_TABLE: your-table-name
+          OPENSEARCH_URL: https://search-domain.example.com
