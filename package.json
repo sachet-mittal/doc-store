@@ -1,0 +1,13 @@
+{
+  "name": "doc-store",
+  "version": "1.0.0",
+  "description": "App to store personal documents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

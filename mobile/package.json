@@ -1,0 +1,24 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "expo": "^53.0.19",
+    "expo-document-picker": "^13.1.6",
+    "expo-file-system": "^18.1.11",
+    "react": "^19.1.0",
+    "react-native": "^0.80.1",
+    "react-native-web": "^0.20.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
